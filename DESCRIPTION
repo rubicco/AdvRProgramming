@@ -7,6 +7,7 @@ Author: Group15(mimte666,steto820,andst745)
 Maintainer: group15<andst745@students.liu.se>
 Description: euclidean and Dijkstra
 Encoding: UTF-8
+LazyData: TRUE
 License: MIT
 Suggests: testthat
 RoxygenNote: 6.1.0
