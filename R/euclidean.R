@@ -1,12 +1,14 @@
-#' Title
+#' Euclidian
 #'
-#' @param x 
-#' @param y 
+#' @param x first number 
+#' @param y second number
+#' 
+#' @description Given 2 values (x and y), the function choose the greatest (for example x) one and replace it with modular of the other (x mod y) until remainer is equal to zero.
 #'
-#' @return greater common divisor
+#' @return returns greater common divisor of two value
 #' @export
 #'
-#' @examples qweqwe
+#' @examples euclidean(100, 1000)
 
 euclidean <-
 function(x, y)
@@ -14,7 +16,7 @@ function(x, y)
   if(!is.numeric(x) | !is.numeric(y) | length(x)!=1 | length(y)!=1) 
     stop("Arguments are not numeric!")
   
-  r = 1
+  r = 1    # remainer of division
   x <- abs(x)
   y <- abs(y)
   
