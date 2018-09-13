@@ -1,12 +1,23 @@
-#' Title
+#' Dijkstra
 #'
-#' @param graph 
-#' @param init_node 
-#'
-#' @return asd
+#' @param graph data frame with 3 col called v1=first node vector,v2=second node vector,w=distances vector   
+#' @param init_node integer value representing the starting node
+#' @references \href{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}{wikipedia page}
+#' @description For a given source node in the graph, the algorithm finds the shortest path between that node and every other
+#' The graph should be a data.frame with three variables (v1, v2 and w) that contains the edges of the graph from v1 to v2 with the weight of the edge w. The dijkstra function should return the shortest path to every other node from the starting node as a vector
+#' 
+#'  
+#'   
+#'     
+#' @return a vector containing the shortest path between the starting node and other nodes
 #' @export
 #'
-#' @examples asdasd
+#' @examples wiki_graph <- data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6), 
+#'                          v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5), 
+#'                          w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
+#' dijkstra(wiki_graph, 1)
+#' 
+
 dijkstra <-
 function(graph, init_node) 
 {

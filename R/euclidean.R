@@ -2,13 +2,13 @@
 #'
 #' @param x first number 
 #' @param y second number
-#' 
+#' @references \href{https://en.wikipedia.org/wiki/Euclidean_algorithm}{wikipedia page}
 #' @description Given 2 values (x and y), the function choose the greatest (for example x) one and replace it with modular of the other (x mod y) until remainer is equal to zero.
 #'
 #' @return returns greater common divisor of two value
 #' @export
 #'
-#' @examples euclidean(100, 1000)
+#' @examples euclidean(100, 1000) 
 
 euclidean <-
 function(x, y)

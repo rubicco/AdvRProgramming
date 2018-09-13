@@ -18,5 +18,8 @@ returns greater common divisor of two value
 Given 2 values (x and y), the function choose the greatest (for example x) one and replace it with modular of the other (x mod y) until remainer is equal to zero.
 }
 \examples{
-euclidean(100, 1000)
+euclidean(100, 1000) 
+}
+\references{
+\href{https://en.wikipedia.org/wiki/Euclidean_algorithm}{wikipedia page}
 }
