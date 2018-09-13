@@ -1,61 +1,5 @@
-euclidean_recursive <- function(x, y) 
-{
-  if(x==y) return(x)
-  else if(x>y) return( euclidean(x-y, y) )
-  else return( euclidean(x, y-x) )
-}
-
-euclidean_recursive(252, 105)
-euclidean_recursive(123612, 13892347912)
-euclidean_recursive(14335, 74678)
-
-euclidean_subtraction <- function(x, y)
-{
-  while(x!=1 & y!=1 & x!=y) 
-  {
-    if(x>y) x <- x-y
-    else y <- y-x
-  }
-  return(min(x, y))
-}
-
-euclidean <- function(x, y)
-{
-  if(!is.numeric(x) | !is.numeric(y) | length(x)!=1 | length(y)!=1) 
-    stop("Arguments are not numeric!")
-  
-  r = 1
-  
-  while(r!=0) 
-  {
-    
-    if(x>y) 
-      {
-        r <- x%%y
-        x <- r
-      }
-    
-    else
-    {
-      r <- y%%x
-      y <- r
-    }
-    
-  }
-  
-  return( max(x, y) )
-}
-
-euclidean(123612, 13892347912)
-euclidean(252, 105)
-euclidean(105, 252)
-euclidean(100, 1000)
-euclidean(14335, 74678)
-euclidean(22334, 64531)
-euclidean(64531, 22334)
-euclidean(5, 5)
-
-dijkstra <- function(graph, init_node) 
+dijkstra <-
+function(graph, init_node) 
 {
   if(!is.data.frame(graph)) 
     stop("'graph' argument is NOT a data.frame!")
@@ -95,10 +39,3 @@ dijkstra <- function(graph, init_node)
   }
   return(d_matrix)
 }
-
-wiki_graph <-
-  data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6),
-             v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5),
-             w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
-dijkstra(wiki_graph, 1)
-dijkstra(wiki_graph, 3)
