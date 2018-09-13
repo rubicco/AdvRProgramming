@@ -8,4 +8,5 @@ Maintainer: group15<andst745@students.liu.se>
 Description: euclidean and Dijkstra
 Encoding: UTF-8
 License: MIT
+Suggests: testthat
 RoxygenNote: 6.1.0
