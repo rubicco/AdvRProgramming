@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples qweqwe
+
 euclidean <-
 function(x, y)
 {
@@ -14,6 +15,8 @@ function(x, y)
     stop("Arguments are not numeric!")
   
   r = 1
+  x <- abs(x)
+  y <- abs(y)
   
   while(r!=0) 
   {
