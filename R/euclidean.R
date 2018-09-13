@@ -1,3 +1,12 @@
+#' Title
+#'
+#' @param x 
+#' @param y 
+#'
+#' @return greater common divisor
+#' @export
+#'
+#' @examples qweqwe
 euclidean <-
 function(x, y)
 {

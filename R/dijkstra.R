@@ -1,3 +1,12 @@
+#' Title
+#'
+#' @param graph 
+#' @param init_node 
+#'
+#' @return asd
+#' @export
+#'
+#' @examples asdasd
 dijkstra <-
 function(graph, init_node) 
 {
