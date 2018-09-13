@@ -1,9 +1,9 @@
 Package: ./Assg3
 Type: Package
-Title: What the package does (short line)
+Title: Assignment3
 Version: 1.0
 Date: 2018-09-13
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Group15(mimte666,steto820,andst745)
+Maintainer: group15<andst745@students.liu.se>
+Description: euclidean and Dijkstra
+License: MIT
