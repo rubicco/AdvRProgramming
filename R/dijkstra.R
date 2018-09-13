@@ -16,8 +16,9 @@ function(graph, init_node)
     stop("'graph' argument has more (or less) than 3 columns!")
   if(!is.numeric(init_node) | length(init_node)!=1) 
     stop("'init_node' argument is not a scalar!")
+  if( !all.equal(colnames(graph), c("v1", "v2", "w")) )
+    stop("graph names are wrong")
   
-  colnames(graph) <- c("v1", "v2", "w")
   values <- unique(c(graph$v1, graph$v2))
   
   if(!(init_node %in% values)) stop("'init_node' is not in the present values")
@@ -46,5 +47,5 @@ function(graph, init_node)
     curr_node <- which(d_matrix[, 1] == min(d_matrix[unvisited,1]))
     unvisited <- unvisited[-which(unvisited==curr_node)]
   }
-  return(d_matrix)
+  return(d_matrix[,1])
 }
