@@ -4,8 +4,6 @@
 #'
 #' @docType data
 #'
-#' @usage data(wiki_graph)
-#'
 #' @keywords datasets
 #'
 #' @references \href{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}{wikipedia page}

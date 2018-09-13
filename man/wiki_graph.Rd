@@ -6,7 +6,7 @@
 \title{wiki_graph}
 \format{An object of class \code{data.frame} with 18 rows and 3 columns.}
 \usage{
-data(wiki_graph)
+wiki_graph
 }
 \description{
 wiki_graph data is for testing dijstra method.
